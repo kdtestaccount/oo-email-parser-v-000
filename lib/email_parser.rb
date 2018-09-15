@@ -27,7 +27,7 @@ class EmailParser
     
       email_string =  @emails.split( ' ' )
       if email_stringinclude?(',')
-        email_string.sub
+        email_string.sub(',', '')
 
 
 
