@@ -19,7 +19,7 @@ class EmailParser
   def parse 
     @emails.sub(' ', '')
     @emails.sub(',', '')
-    @emails_array =  @emails.split( ''.com' )
+    @emails_array =  @emails.split( '.com' )
   end
 
 
