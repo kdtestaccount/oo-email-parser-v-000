@@ -22,6 +22,7 @@ class EmailParser
     else
       email_address  = @emails.split( ' ' )
       @emails_array << email_address
+    end
   end
 
 
