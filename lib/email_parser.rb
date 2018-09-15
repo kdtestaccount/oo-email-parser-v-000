@@ -29,7 +29,7 @@ class EmailParser
         new_email_string = email_string.sub(',', '')
         @emails_array << new_email_string
       elsif email_string.include?(' ')
-        new_email_string = email_string.sub(',', '')
+        new_email_string = email_string.sub(' ', '')
         @emails_array << new_email_string
 
 
