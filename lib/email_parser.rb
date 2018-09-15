@@ -7,7 +7,7 @@
 
 class EmailParser
   
-  attr_accessor :emails
+  attr_accessor :emails, :emails_array
   
   
   def initialize(emails)
@@ -17,7 +17,7 @@ class EmailParser
   
   def parse 
     email_address  = @emails.split( ',' )
-    emails_array << email_address
+    @emails_array << email_address
   end
 
 
