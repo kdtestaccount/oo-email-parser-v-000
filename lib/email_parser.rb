@@ -21,8 +21,6 @@ class EmailParser
 
       # expect(EmailParser.new("avi@test.com, avi@test.com").parse).to eq(["avi@test.com"])
 
-
-  
   def parse 
       @emails.split(/[,\s]+/)
   end
