@@ -21,8 +21,8 @@ class EmailParser
       email_address  = @emails.split( ', ' )
       @emails_array << email_address
     else
-      email_address  = @emails.split( ' ' )
-      @emails_array << email_address
+      email_address  = @emails.split( ' ' ).join(" , ")
+
     end
   end
 
