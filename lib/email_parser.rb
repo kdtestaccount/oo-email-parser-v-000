@@ -33,5 +33,5 @@ class EmailParser
         @emails_array << new_email_string
       else 
         @emails_array << email_string
-
+  end
 end
