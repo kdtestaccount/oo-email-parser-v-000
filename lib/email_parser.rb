@@ -24,12 +24,10 @@ class EmailParser
 
   
   def parse 
-    
       email_string =  @emails.split( ' ' )
-      if email_stringinclude?(',')
-        email_string.sub(',', '')
-        @emails_array << email_string
-
+      if email_string.include?(',')
+        new_email_string = email_string.sub(',', '')
+        @emails_array << new_email_stringemail_string
 
 
 end
