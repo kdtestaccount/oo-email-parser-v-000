@@ -15,11 +15,11 @@ class EmailParser
     @emails_array = []
   end
   
-      expect(EmailParser.new("avi@test.com, arel@test.com").parse).to eq(["avi@test.com", 
-      expect(EmailParser.new("avi@test.com arel@test.com").parse).to eq(["avi@test.com", 
-      emails = "avi@test.com, arel@test.com test@avi.com, test@arel.com"
+      # expect(EmailParser.new("avi@test.com, arel@test.com").parse).to eq(["avi@test.com", 
+      # expect(EmailParser.new("avi@test.com arel@test.com").parse).to eq(["avi@test.com", 
+      # emails = "avi@test.com, arel@test.com test@avi.com, test@arel.com"
 
-      expect(EmailParser.new("avi@test.com, avi@test.com").parse).to eq(["avi@test.com"])
+      # expect(EmailParser.new("avi@test.com, avi@test.com").parse).to eq(["avi@test.com"])
 
 
   
