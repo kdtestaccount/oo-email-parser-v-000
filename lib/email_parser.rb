@@ -20,7 +20,7 @@ class EmailParser
     if @emails.include?(', ')
       @emails_array =  @emails.split( ', ' )
     elsif @emails.include?('","')
-      @emails_array =  @emails.split( ', ' )
+      @emails_array =  @emails.split( '","' )
     else
       @emails_array  = @emails.split
     end
