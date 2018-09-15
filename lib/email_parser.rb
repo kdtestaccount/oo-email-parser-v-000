@@ -18,7 +18,7 @@ class EmailParser
   
   def parse 
     if @emails.include?(',')
-      new_format_email =  @emails.split( ' ' ).collect{|w|}.join(", ")
+      new_format_email =  @emails.split( ' ' ).each
        @emails_array << new_format_email
     else
       email_address  = @emails.split( ' ' ).join(" , ")
