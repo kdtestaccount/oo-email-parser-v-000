@@ -21,7 +21,6 @@ class EmailParser
       @emails_array =  @emails.split( ' ' )
     else
       @emails_array  = @emails.split
-
     end
   end
 
