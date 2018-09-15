@@ -12,6 +12,7 @@ class EmailParser
   
   def initialize(emails)
     @emails = emails
+    @emails_array = []
   end
   
   
