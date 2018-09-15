@@ -18,8 +18,8 @@ class EmailParser
   
   def parse 
     if @emails.include?(',')
-      email_address  = @emails.split( ' ' ).join(" , ")
-      @emails_array << email_address
+      @emails =  @emails.split( ' ' ).join(" , ")
+      # @emails_array << email_address
     else
       email_address  = @emails.split( ' ' ).join(" , ")
 
