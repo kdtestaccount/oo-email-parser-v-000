@@ -17,16 +17,8 @@ class EmailParser
   
   
   def parse 
-    
-    @emails.sub(',', '')
     @emails.sub(' ', '')
-    
-    @emails.split( ', ' )
-    elsif @emails.include?('","')
-      @emails_array =  @emails.split( '","' )
-    else
-      @emails_array  = @emails.split
-    end
+    @emails_array =  @emails.split( ',' )
   end
 
 
