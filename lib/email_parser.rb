@@ -35,3 +35,4 @@ class EmailParser
         @emails_array << email_string
   end
 end
+end
